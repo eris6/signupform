@@ -171,7 +171,8 @@ input[type='password']:invalid{
     box-shadow: 5px 10px 10px #E5E7EB;
     padding: 20px 50px;
     border: none;
-    
+    font-family: 'Roboto', Arial, 'Times New Roman', Times, serif;
+    font-size: 1rem;
 }
 
 .account-button:hover{
