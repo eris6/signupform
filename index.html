@@ -5,20 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="left-side">
-        <div class="logo-background">
-            <img id="logo" src="images/odin-logo.png" alt="white outline of a bearded viking">  
-            <span>ODIN</span>
+
+    <div class="left-right-side">
+        <div class="left-side">
+            <div class="logo-background">
+                <img id="logo" src="images/odin-logo.png" alt="white outline of a bearded viking">  
+                <span>ODIN</span>
+                
+            </div>
             
+            <div class="footer-container">
+                <span id="footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unplash</a></span>
+            </div>
+            <img id="backgroundimg" src="images/background.jpg" alt="green leaf plant in close up photography">
         </div>
-        
-        <div class="footer-container">
-            <span id="footer">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unplash</span>
+
+        <div class="right-side">
+            <div class="top-text">
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                <br>
+                Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </div>
+            <div class="middle-form">
+                Let's do this! 
+                <br>
+                <br>
+                <form action="sample-website.com/path" method="post">
+                    <div class="left-inputs">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="first_name" size="30" required>
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" size="30" required>
+
+
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" size="30" required>
+                        <div class="password-text">*Passwords do not match</div>
+                        
+                    </div>
+                    <div class="right-inputs">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name" size="30" required>
+
+                        <label for="phone_number">PHONE NUMBER</label>
+                        <input type="text" id="phone_number" name="phone_number" size="30" required>
+
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password" size="30" required>
+                    </div>
+                    
+
+                </form>
+                
+            </div>
+
+            <div class="lower-button">
+                <button type="button" class="account-button">Create Account</button>
+                
+            </div>
+            <div class="lower-text">
+                Already have an account? <span id="green-text">Log in</span>
+            </div>
+            
+            
+
         </div>
-        <img id="backgroundimg" src="images/background.jpg" alt="green leaf plant in close up photography">
     </div>
+    
+
+    
     
 </body>
 </html>
