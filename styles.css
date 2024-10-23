@@ -68,10 +68,6 @@ a{
     gap: 2rem;
 }
 
-
-
-
-
 #logo{
     height: 70%;
     width: auto;
@@ -95,11 +91,12 @@ a{
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    padding-right: 60px;
-    padding-left: 30px;    
+    padding-right: 5%;
+    padding-left: 5%;    
     box-shadow: 5px 10px 10px #E5E7EB;
-
+    padding-bottom: 5%;
     border-bottom: 1px solid #d3d3d3;
+
 }
 
 input[type='text'],input[type='password'], input[type='email']{
@@ -124,15 +121,21 @@ label{
     
 }
 
-#first_name, #last_name, #email, #phone_number, #password, #confirm-password{
-    margin-bottom: 15%;
-    height: 20px;
+#first_name, #last_name, #email, #phone_number, #confirm-password{
+    margin-bottom: 10%;
+    height: 10%;
 }
 
-.left-inputs{
-    float: left;
-    margin-right: 10%;
+#password{height: 10%; }
 
+.input-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-inputs, .right-inputs {
+    flex: 1; 
+    min-width: 200px; 
 }
 
 
@@ -153,9 +156,7 @@ input[type='password']:invalid{
     border-color: red;
 }
 
-.right-inputs{
-    float: left;    
-}
+
 
 .lower-button{
     background-color: white;
